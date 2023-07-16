@@ -32,6 +32,7 @@ nav a {
 .banner-container {
   background: rgba(255, 144, 14, 0.1);
   padding: 30px 240px;
+  height: 100vh;
 }
 .banner-heading {
   color: var(--dark-01, #131313);
@@ -40,7 +41,7 @@ nav a {
 }
 .banner-title {
   color: var(--dark-01, #131313);
-  font-size: 64px;
+  font-size: calc(4.5vw);
   margin-bottom: 20px;
 }
 .banner-description {
@@ -48,16 +49,33 @@ nav a {
   font-size: 16px;
 }
 .banner-pic {
-  height: 400px;
+  width: 100%;
 }
 .btn-primary {
   border: none;
   border-radius: 8px;
   background: #ff900e;
-  width: 180px;
-  height: 64px;
+  padding: 15px 20px;
   color: #fff;
-  font-size: 20px;
+  font-size: calc(2vw);
   font-weight: 600;
   margin: 20px;
+}
+
+/* responsive for mobile  */
+@media screen and (max-width: 576px) {
+  .header-container {
+    flex-direction: column;
+    row-gap: 20px;
+    flex-wrap: wrap;
+  }
+  .banner-container {
+    padding: 20px 50px;
+  }
+}
+/* responsive for tablet */
+@media screen and (min-width: 576px) and (max-width: 960px) {
+  .banner-container {
+    padding: 25px 50px;
+  }
 }
