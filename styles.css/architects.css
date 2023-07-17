@@ -32,7 +32,7 @@ nav a {
 .banner-container {
   background: rgba(255, 144, 14, 0.1);
   padding: 30px 240px;
-  height: 100vh;
+  height: 100%;
 }
 .banner-heading {
   color: var(--dark-01, #131313);
@@ -52,16 +52,48 @@ nav a {
   width: 100%;
 }
 .btn-primary {
-  border: none;
   border-radius: 8px;
-  background: #ff900e;
-  padding: 15px 20px;
   color: #fff;
-  font-size: calc(2vw);
-  font-weight: 600;
-  margin: 20px;
+  font-size: 1.25rem;
+  background: #ff900e;
+  padding: 20px 25px;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+}
+/* Our Features section */
+.teams-container {
+  display: flex;
+  align-items: center;
+  margin: 85px 270px;
+}
+.teams-img-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+.teams-img-container img {
+  width: 220px;
+  height: 220px;
+}
+.teams-content {
+  padding-left: 70px;
 }
 
+.team-title {
+  font-size: 30px;
+  font-weight: 500;
+}
+.teams-description {
+  color: var(--dark-03, #727272);
+  margin-top: 24px;
+  margin-bottom: 25px;
+}
+.of-Our,
+.features {
+  font-size: 30px;
+  font-weight: 700;
+}
 /* responsive for mobile  */
 @media screen and (max-width: 576px) {
   .header-container {
@@ -71,6 +103,7 @@ nav a {
   }
   .banner-container {
     padding: 20px 50px;
+    width: 80%;
   }
 }
 /* responsive for tablet */
